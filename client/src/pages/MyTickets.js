@@ -153,14 +153,14 @@ class MyTickets extends Component {
           <Td>{event.shortName}</Td>
           <Td>{event.startTimeDisplay}</Td>
           <Td>{event.endTimeDisplay}</Td>
-          <Td>{event.price}</Td>
+          <Td>{event.priceInEth} ETH</Td>
           <Td>{event.shortOrganizer}</Td>
         </Tr>
       );
     };
 
     return (
-      <Flex flexDir={"column"}>
+      <Flex flexDir={"column"} width={"100%"}>
         {loaded ? (
           tickets.length > 0 ? (
             <>

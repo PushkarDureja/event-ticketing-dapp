@@ -194,7 +194,7 @@ class MyEvents extends Component {
     };
 
     return (
-      <Flex flexDir={"column"}>
+      <Flex flexDir={"column"} width={"100%"}>
         {loaded ? (
           <Flex className="mt-1 position-relative">
             <div>
@@ -214,7 +214,7 @@ class MyEvents extends Component {
         {loaded ? (
           events.length > 0 ? (
             <>
-              <TableContainer>
+              <TableContainer width={"100%"}>
                 <Table variant="striped" colorScheme="blue" size="lg">
                   <TableCaption placement="top" fontSize={"24px"}>
                     Show my events
@@ -237,7 +237,7 @@ class MyEvents extends Component {
               </TableContainer>
             </>
           ) : (
-            <Box marginTop={"230"} marginLeft={"400"} style={{}}>
+            <Box>
               <p
                 className="text-center"
                 style={{ padding: 50, border: "1px blue" }}

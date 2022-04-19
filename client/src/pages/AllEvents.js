@@ -160,7 +160,7 @@ class Events extends Component {
               </TableContainer>
             </>
           ) : (
-            <Box marginTop={"230"} marginLeft={"400"} style={{}}>
+            <Box>
               <p
                 className="text-center"
                 style={{ padding: 50, border: "1px blue" }}
